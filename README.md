@@ -4,7 +4,7 @@
 
 A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 
-(Based off the [Velvet](https://github.com/ChecksumDev/velvet) with a few additions)
+(Based off [Velvet](https://github.com/ChecksumDev/velvet) with a few additions)
 
 ## 🔎 Features:
 
