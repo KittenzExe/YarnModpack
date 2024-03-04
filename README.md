@@ -34,9 +34,11 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 
 ### 🚀 Other Launchers
 
+**Download latest modpack version** - You can find the latest release [here](https://github.com/KittenzExe/YarnModpack/releases).
+
 **Setup** - Select either the .zip or .mrpack file and import that into your prefered Minecraft Launcher
 
-**Updating** - If your launcher doesn't have an option to update mods, you can download the latest release. (Weekly updates)
+**Updating** - If your launcher doesn't have an option to update mods, you can download the [latest release](https://github.com/KittenzExe/YarnModpack/releases). (Weekly updates)
 
 ## 🧵 Have fun!
 
