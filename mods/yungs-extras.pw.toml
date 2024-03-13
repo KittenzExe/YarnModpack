@@ -1,6 +1,6 @@
 name = "YUNG's Extras"
 filename = "YungsExtras-1.20-Forge-4.0.3.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/ZYgyPyfq/versions/h4m8J7w8/YungsExtras-1.20-Forge-4.0.3.jar"

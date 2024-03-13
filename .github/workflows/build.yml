@@ -1,6 +1,7 @@
 name: Build Yarn
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - build
