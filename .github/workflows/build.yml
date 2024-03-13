@@ -49,14 +49,15 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: Yarn Modpack Release - ${{env.commit}}
+          tag_name: Release
           name: Yarn Modpack Release - ${{env.commit}}
           body: Automated release - ${{env.commit}}
           generate_release_notes: true
           # note you'll typically need to create a personal access token
           # with permissions to create releases in the other repo
           token: ${{ secrets.GITHUB_TOKEN }} 
-          draft: true
+          draft: false
+          make_latest: true
           files: |
             ${{env.modpackFilePrefix}}_PrismLauncher.zip
             ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack 
