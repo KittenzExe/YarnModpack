@@ -1,0 +1,13 @@
+name = "Macaw's Bridges - Biome O' Plenty"
+filename = "macawsbridgesbop-1.20-1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4d7eGKIA/versions/fYfeGRun/macawsbridgesbop-1.20-1.1.jar"
+hash-format = "sha1"
+hash = "485c8e74ce7df831d56ce30864c4bf24891252af"
+
+[update]
+[update.modrinth]
+mod-id = "4d7eGKIA"
+version = "fYfeGRun"

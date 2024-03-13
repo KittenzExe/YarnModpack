@@ -1,0 +1,13 @@
+name = "MC VR API"
+filename = "vrapi-3.0.7-1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/B3INNxum/versions/uIlafJxf/vrapi-3.0.7-1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "75ae8112b2ab27fb420f0d45b91ce6e85e143f26"
+
+[update]
+[update.modrinth]
+mod-id = "B3INNxum"
+version = "uIlafJxf"

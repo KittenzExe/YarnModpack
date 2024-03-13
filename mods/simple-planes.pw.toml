@@ -1,0 +1,13 @@
+name = "Simple Planes"
+filename = "simpleplanes-1.20.1-5.2.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/74piZbBF/versions/FJhrX1W8/simpleplanes-1.20.1-5.2.7.jar"
+hash-format = "sha1"
+hash = "d527b28b0f40f0e746d3fc622335c0efde4713a2"
+
+[update]
+[update.modrinth]
+mod-id = "74piZbBF"
+version = "FJhrX1W8"
