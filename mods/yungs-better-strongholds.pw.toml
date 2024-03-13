@@ -1,6 +1,6 @@
 name = "YUNG's Better Strongholds"
 filename = "YungsBetterStrongholds-1.20-Forge-4.0.3.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/kidLKymU/versions/rwiShgsc/YungsBetterStrongholds-1.20-Forge-4.0.3.jar"

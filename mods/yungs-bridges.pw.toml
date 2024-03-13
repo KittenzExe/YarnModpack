@@ -1,6 +1,6 @@
 name = "YUNG's Bridges"
 filename = "YungsBridges-1.20-Forge-4.0.3.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/Ht4BfYp6/versions/KgO1gfM2/YungsBridges-1.20-Forge-4.0.3.jar"
