@@ -6,7 +6,6 @@ on:
       - build
 env:
         modpackFilePrefix: Yarn-Modpack
-        commit: $(git rev-parse --short "$GITHUB_SHA")
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get commit id
+        run: echo "commit=$(git rev-parse --short \"$GITHUB_SHA\")" >> "$GITHUB_ENV"
       - name: Setup Go
         uses: actions/setup-go@v5
 
