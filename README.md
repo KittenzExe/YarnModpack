@@ -46,4 +46,4 @@ So get ready to unravel the modpack and get ready for the fun and adventure!
 
 ## Contributors
 
-- @lilysoftpaw for the Packwiz Pack & Autorelease setup
+- [@lilysoftpaw](https://github.com/lilysoftpaw) for the Packwiz Pack & Autorelease setup
