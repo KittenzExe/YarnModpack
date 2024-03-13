@@ -56,7 +56,8 @@ jobs:
           # note you'll typically need to create a personal access token
           # with permissions to create releases in the other repo
           token: ${{ secrets.GITHUB_TOKEN }} 
-          draft: true
+          draft: false
+          make_latest: true
           files: |
             ${{env.modpackFilePrefix}}_PrismLauncher.zip
             ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack 
