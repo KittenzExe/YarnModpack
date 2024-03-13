@@ -1,6 +1,6 @@
 name = "YUNG's Better Dungeons"
 filename = "YungsBetterDungeons-1.20-Forge-4.0.3.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/o1C1Dkj5/versions/yyEN8Zb4/YungsBetterDungeons-1.20-Forge-4.0.3.jar"
