@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - build
-
+env:
+        modpackFilePrefix: Yarn-Modpack
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,21 +20,24 @@ jobs:
         run: go install github.com/packwiz/packwiz@latest
 
       - name: Build for Modrinth
-        run: packwiz modrinth export --output $(git rev-parse --short "$GITHUB_SHA")
+        run: packwiz modrinth export --output $("$modpackFilePrefix")_Modrinth_V$(git rev-parse --short "$GITHUB_SHA").mrpack
 
       - name: Build for CurseForge
-        run: packwiz curseforge export
+        run: packwiz curseforge export --output $("$modpackFilePrefix")_Curseforge_V$(git rev-parse --short "$GITHUB_SHA").zip
+
+      - name: Build for Prism Launcher
+        run: packwiz curseforge export --output $("$modpackFilePrefix")_Curseforge_V$(git rev-parse --short "$GITHUB_SHA").zip
 
       - name: Upload Modrinth to GitHub Releases
         uses: actions/upload-artifact@v2
         with:
-          name: yarn.mrpack
-          path: yarn-*.mrpack
+          name: Yarn-Modpack_Modrinth_V$(git rev-parse --short "$GITHUB_SHA").mrpack
+          path: Yarn-Modpack_Modrinth_V$(git rev-parse --short "$GITHUB_SHA").mrpack
           if-no-files-found: error
 
       - name: Upload CurseForge to GitHub Releases
         uses: actions/upload-artifact@v2
         with:
-          name: yarn.zip
-          path: yarn-*.zip
+          name: Yarn-Modpack_Curseforge_V$(git rev-parse --short "$GITHUB_SHA").zip
+          path: Yarn-Modpack_Curseforge_V$(git rev-parse --short "$GITHUB_SHA").zip
           if-no-files-found: error
