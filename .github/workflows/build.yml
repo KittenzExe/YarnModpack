@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Get commit id
-        run: echo "commit=$(git rev-parse --short \"$GITHUB_SHA\")" >> "$GITHUB_ENV"
+        run: echo 'commit=$(git rev-parse --short "$GITHUB_SHA")' >> "$GITHUB_ENV"
       - name: Setup Go
         uses: actions/setup-go@v5
 
@@ -28,21 +28,33 @@ jobs:
         run: packwiz curseforge export --output ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
 
       - name: Upload Modrinth to GitHub Releases
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
           path: ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
           if-no-files-found: error
 
       - name: Upload CurseForge to GitHub Releases
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
           path: ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
           if-no-files-found: error
       - name: Upload Prism To Github Releases
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
             name: ${{env.modpackFilePrefix}}_PrismLauncher.zip
             path: ${{env.modpackFilePrefix}}_PrismLauncher.zip
             if-no-files-found: error
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env: 
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+              tag_name: ${{ github.ref }}
+              release_name: Release ${{ github.ref }} - Commit ${{env.commit}}
+              body: |
+                Automatic Release of the modpack
+              draft: true
+              prerelease: false
