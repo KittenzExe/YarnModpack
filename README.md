@@ -18,7 +18,7 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 ## 📥 Instalation Guide
 
 > [!WARNING]  
-> The Yarn Modpack doesn't currently have automatic updating. Please see below for more info.
+> The Yarn Modpack has packwiz updating for prism launcher. Other launchers may vary. See below.
 
 ### 🚀 Prism Launcher (Recommended)
 
@@ -30,7 +30,7 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 
 **All good to go!** - That's it! Go have fun!
 
-**Updating** - In prism, edit the instance, go into the mods tab, ctrl+a, then check for updates. (Be careful as some mods may break each update, please create a back-up before updating!)
+**Updating** - Upon launching, packwiz should update your mods automatically!
 
 ### 🚀 Other Launchers
 
@@ -38,7 +38,7 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 
 **Setup** - Select either the .zip or .mrpack file and import that into your prefered Minecraft Launcher
 
-**Updating** - If your launcher doesn't have an option to update mods, you can download the [latest release](https://github.com/KittenzExe/YarnModpack/releases). (Weekly updates)
+**Updating** - If your launcher doesn't have an option to use packwiz, you can download the [latest release](https://github.com/KittenzExe/YarnModpack/releases). (Weekly updates)
 
 ## 🧵 Have fun!
 
