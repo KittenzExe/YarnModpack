@@ -50,7 +50,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: Release
+          tag_name: Release-${{env.commit}}
           name: Yarn Modpack Release - ${{env.commit}}
           body: Automated release - ${{env.commit}}
           generate_release_notes: true
