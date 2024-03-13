@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - build
-
+env:
+        modpackFilePrefix: Yarn-Modpack
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get commit id
+        run: echo 'commit='$(git rev-parse --short "$GITHUB_SHA") >> "$GITHUB_ENV"
       - name: Setup Go
         uses: actions/setup-go@v5
 
@@ -19,21 +22,42 @@ jobs:
         run: go install github.com/packwiz/packwiz@latest
 
       - name: Build for Modrinth
-        run: packwiz modrinth export --output $(git rev-parse --short "$GITHUB_SHA")
+        run: packwiz modrinth export --output ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
 
       - name: Build for CurseForge
-        run: packwiz curseforge export
+        run: packwiz curseforge export --output ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
 
       - name: Upload Modrinth to GitHub Releases
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: yarn.mrpack
-          path: yarn-*.mrpack
+          name: ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
+          path: ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
           if-no-files-found: error
 
       - name: Upload CurseForge to GitHub Releases
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: yarn.zip
-          path: yarn-*.zip
+          name: ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
+          path: ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
           if-no-files-found: error
+      - name: Upload Prism To Github Releases
+        uses: actions/upload-artifact@v4
+        with:
+            name: ${{env.modpackFilePrefix}}_PrismLauncher.zip
+            path: ${{env.modpackFilePrefix}}_PrismLauncher.zip
+            if-no-files-found: error
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: Yarn Modpack Release - ${{env.commit}}
+          name: Yarn Modpack Release - ${{env.commit}}
+          body: Automated release - ${{env.commit}}
+          generate_release_notes: true
+          # note you'll typically need to create a personal access token
+          # with permissions to create releases in the other repo
+          token: ${{ secrets.GITHUB_TOKEN }} 
+          draft: true
+          files: |
+            ${{env.modpackFilePrefix}}_PrismLauncher.zip
+            ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack 
+            ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
