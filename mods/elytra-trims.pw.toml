@@ -1,0 +1,13 @@
+name = "Elytra Trims"
+filename = "elytratrims-forge-2.0.3+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XpzGz7KD/versions/DTlDDoEA/elytratrims-forge-2.0.3%2B1.20.1.jar"
+hash-format = "sha1"
+hash = "d80ea872d291b33299b6264118f6136118cdd460"
+
+[update]
+[update.modrinth]
+mod-id = "XpzGz7KD"
+version = "DTlDDoEA"

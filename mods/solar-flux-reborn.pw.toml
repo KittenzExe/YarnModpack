@@ -1,0 +1,13 @@
+name = "Solar Flux Reborn"
+filename = "SolarFluxReborn-1.20.1-20.1.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4QG5lev4/versions/EzWdtRPH/SolarFluxReborn-1.20.1-20.1.5.jar"
+hash-format = "sha1"
+hash = "d386c11bf48a3b54187e4c98a2d7b93b7f5de00b"
+
+[update]
+[update.modrinth]
+mod-id = "4QG5lev4"
+version = "EzWdtRPH"

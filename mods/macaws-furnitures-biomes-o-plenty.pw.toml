@@ -1,0 +1,13 @@
+name = "Macaw's Furnitures - Biomes O' Plenty"
+filename = "mcwfurnituresbop-1.20-1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XQ6CZtXV/versions/ZuQ9tHqk/mcwfurnituresbop-1.20-1.1.jar"
+hash-format = "sha1"
+hash = "c5051e8612eaeea238c4076f6dc908e96d61b58c"
+
+[update]
+[update.modrinth]
+mod-id = "XQ6CZtXV"
+version = "ZuQ9tHqk"

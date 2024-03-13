@@ -43,3 +43,7 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 ## 🧵 Have fun!
 
 So get ready to unravel the modpack and get ready for the fun and adventure!
+
+## Contributors
+
+- [@lilysoftpaw](https://github.com/lilysoftpaw) for the Packwiz Pack & Autorelease setup

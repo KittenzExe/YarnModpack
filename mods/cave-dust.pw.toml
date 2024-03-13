@@ -1,0 +1,13 @@
+name = "Cave Dust"
+filename = "cavedust-2.0.4-1.20.1-forge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/jawg7zT1/versions/inDklMG3/cavedust-2.0.4-1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "c18fba965e5dab309de5adf9e8fd7ee3253be7e9"
+
+[update]
+[update.modrinth]
+mod-id = "jawg7zT1"
+version = "inDklMG3"

@@ -1,0 +1,13 @@
+name = "Portable Crafting Table"
+filename = "PortableCraftingTable-1.20.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kaoDOR6G/versions/yNQrM6gy/PortableCraftingTable-1.20.1-1.0.0.jar"
+hash-format = "sha1"
+hash = "eb4b12b10a852cf3f178acf8152c1d716fa59918"
+
+[update]
+[update.modrinth]
+mod-id = "kaoDOR6G"
+version = "yNQrM6gy"
