@@ -24,7 +24,7 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 
 **Download Prism** - You can find the download link [here](https://prismlauncher.org/download/).
 
-**Download latest modpack version** - You can find the latest release [here](https://github.com/KittenzExe/YarnModpack/releases).
+**Download latest modpack version** - You can find the latest release [here](https://github.com/KittenzExe/YarnModpack/releases/latest).
 
 **Setup** - Go to Add Instance, Import from zip, then select either the .zip or .mrpack file.
 
@@ -34,11 +34,11 @@ A Minecraft Forge Modpack designed as a comfy but adventurous modpack.
 
 ### 🚀 Other Launchers
 
-**Download latest modpack version** - You can find the latest release [here](https://github.com/KittenzExe/YarnModpack/releases).
+**Download latest modpack version** - You can find the latest release [here](https://github.com/KittenzExe/YarnModpack/releases/latest).
 
 **Setup** - Select either the .zip or .mrpack file and import that into your prefered Minecraft Launcher
 
-**Updating** - If your launcher doesn't have an option to use packwiz, you can download the [latest release](https://github.com/KittenzExe/YarnModpack/releases). (Weekly updates)
+**Updating** - If your launcher doesn't have an option to use packwiz, you can download the [latest release](https://github.com/KittenzExe/YarnModpack/releases/latest). (Weekly updates)
 
 ## 🧵 Have fun!
 
