@@ -925,7 +925,7 @@ metafile = true
 
 [[files]]
 file = "mods/applied-energistics-2-wireless-terminals.pw.toml"
-hash = "610eaf47cffb21e153bbe5f26fb6dfb7f9af5a2d741b22005504f28602d3ec35"
+hash = "13cabf66a63def3178ece0c77dd31690b30198dd53a750de871af2e07003aa51"
 metafile = true
 
 [[files]]
@@ -1104,7 +1104,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "78dc4b8d383aafed21c0e63b5b13a455731e6e9d945235162e4b22ef1b5a4c3b"
+hash = "11181dee7fff9f174dfd2635c70d5422776be61119bb214dc8782076fb064138"
 metafile = true
 
 [[files]]
@@ -1159,7 +1159,7 @@ metafile = true
 
 [[files]]
 file = "mods/double-doors.pw.toml"
-hash = "b50027efa8c9bedc81a2d7287f91381da1097b4d12b68d04d0f6421d5d294ad8"
+hash = "2ce4b85768ecd006e8cee9857ab0a80c58571ed8119bf0175d322bfdb5607d09"
 metafile = true
 
 [[files]]
@@ -1214,7 +1214,7 @@ metafile = true
 
 [[files]]
 file = "mods/enderio.pw.toml"
-hash = "4fa7b42729561daf1a66ee9db8391d588eaf4c8ac4cf6e08248922cde1f74e60"
+hash = "4c857ad84929a64a1e5ec80784955b3f4769a3745b4f15d488a5f3b54730e697"
 metafile = true
 
 [[files]]
@@ -1289,7 +1289,7 @@ metafile = true
 
 [[files]]
 file = "mods/hammer-lib.pw.toml"
-hash = "074ada3a4ff8e2e649e4bc977a4a2ff6eb6818f1808d9c66220319885e75a17a"
+hash = "0259ff86b5c5655cbe9a25c626dcabc76cc049a82cce44af54a652fd4474f021"
 metafile = true
 
 [[files]]
@@ -1633,7 +1633,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "493902c502de37691af4888e7196c657e96561287c1999e9894c13607ab19ab8"
+hash = "f975d01001fa5258c3fa39f7631d1e176e37ab3ad3e74287adcc7dbd011bba24"
 metafile = true
 
 [[files]]
@@ -1643,17 +1643,17 @@ metafile = true
 
 [[files]]
 file = "mods/solar-flux-reborn.pw.toml"
-hash = "d11e000fb28e72f0fed1c0e4bccd2e59fd04c08c139508f3803650c49ad2ae08"
+hash = "dddf7214b69a58578e48cbec197c2a25366c6dc664be57b5a2e8f8f621709b70"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "1f9a4cbe4a28f73c3fcb8a32a650677115baa383c126a9e99862dd208b999d6e"
+hash = "14899d27f95f22f5772601baa3debf9e030bf771110fd8638e0a77f40565f3f1"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "21bf241ea321e356ba6a44218cf570905c776e05f1fefe46d64e27c4ec4fd487"
+hash = "d4185903dbac42b3e3749f7ad86d1de8f85d4a6bb57e84fd6810e2223938bb16"
 metafile = true
 
 [[files]]
@@ -1713,7 +1713,7 @@ metafile = true
 
 [[files]]
 file = "mods/wavey-capes.pw.toml"
-hash = "3fd7667f5782bbff0d84e0e55a65fa107c3538f29dd5eb0981637827a604fe78"
+hash = "f9761d9aca039d5195bd0347c457afe7061aa24a92b2cccd86951433f1502d36"
 metafile = true
 
 [[files]]
@@ -1812,40 +1812,8 @@ hash = "5b5fdfaf8e757e4f54e621aca1c52f5d8c90c7be3bc78c2978173326f5c02bf5"
 metafile = true
 
 [[files]]
-file = "resourcepacks/Bluey/Bluey-OPTI_ETF_EMF.zip"
+file = "resourcepacks/Bluey-OPTI_ETF_EMF.zip"
 hash = "530a294df38c092604e8a2df8f7e7dd57890690ebf2ae84d86a08f920da44fe5"
-
-[[files]]
-file = "resourcepacks/Bluey/Pack.png"
-hash = "35ad076f0c604dd58309bb7b0b57b0597c853a09999d03380f2d23f33d214647"
-
-[[files]]
-file = "resourcepacks/Bluey/assets/minecraft/optifine/random/entity/wolf/wolf.properties"
-hash = "5c62071749df5dc83d03db40a7db184a913ebf117d3972d7621ae9b56f107c22"
-
-[[files]]
-file = "resourcepacks/Bluey/assets/minecraft/optifine/random/entity/wolf/wolf2.png"
-hash = "077bccd5e7fd7c23f9325aad876330f58c99882f20c02aeb5331b9d971957e12"
-
-[[files]]
-file = "resourcepacks/Bluey/assets/minecraft/optifine/random/entity/wolf/wolf_angry2.png"
-hash = "a09ee96d35cae32cec1a0c704444d0ea90afbc39376f75eac623dcf6dc780c1b"
-
-[[files]]
-file = "resourcepacks/Bluey/assets/minecraft/optifine/random/entity/wolf/wolf_collar2.png"
-hash = "051de7c803c55dcd2fd866d424167b265f3b50090592e71b0e4bafe5a38dd1b3"
-
-[[files]]
-file = "resourcepacks/Bluey/assets/minecraft/optifine/random/entity/wolf/wolf_tame2.png"
-hash = "077bccd5e7fd7c23f9325aad876330f58c99882f20c02aeb5331b9d971957e12"
-
-[[files]]
-file = "resourcepacks/Bluey/pack.mcmeta"
-hash = "6d9f21e72cfb6241dedcfb639606f50166d20a4bc4615876b38ab45cc7587963"
-
-[[files]]
-file = "resourcepacks/Bluey/pack_info.txt"
-hash = "1c56f5e67b7acc805c326fde011b7927bacebe470690026639d834134e98dcda"
 
 [[files]]
 file = "resourcepacks/Dramatic Skys Demo 1.5.3.18.zip"
