@@ -46,15 +46,17 @@ jobs:
             name: ${{env.modpackFilePrefix}}_PrismLauncher.zip
             path: ${{env.modpackFilePrefix}}_PrismLauncher.zip
             if-no-files-found: error
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env: 
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      - name: Release
+        uses: softprops/action-gh-release@v2
         with:
-              tag_name: ${{ github.ref }}
-              release_name: Release ${{ github.ref }} - Commit ${{env.commit}}
-              body: |
-                Automatic Release of the modpack
-              draft: true
-              prerelease: false
+          tag_name: ${{ github.ref }}
+          name: Yarn Modpack Release - ${{env.commit}}
+          body: Automated release
+          # note you'll typically need to create a personal access token
+          # with permissions to create releases in the other repo
+          token: ${{ secrets.GITHUB_TOKEN }} 
+          draft: true
+          files: |
+            ${{env.modpackFilePrefix}}_PrismLauncher.zip
+            ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack 
+            ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
