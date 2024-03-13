@@ -1,0 +1,13 @@
+name = "Simple Decorations"
+filename = "[FORGE] 1.20.1 DECO v2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/InAkadMA/versions/MQsvzKt9/%5BFORGE%5D%201.20.1%20DECO%20v2.jar"
+hash-format = "sha1"
+hash = "70db984f5166909ee4fa26e10e39dc4d8e12b35f"
+
+[update]
+[update.modrinth]
+mod-id = "InAkadMA"
+version = "MQsvzKt9"

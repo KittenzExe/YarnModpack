@@ -1,0 +1,39 @@
+name: Build Yarn
+
+on:
+  push:
+    branches:
+      - build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+
+      - name: Install Packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Build for Modrinth
+        run: packwiz modrinth export --output $(git rev-parse --short "$GITHUB_SHA")
+
+      - name: Build for CurseForge
+        run: packwiz curseforge export
+
+      - name: Upload Modrinth to GitHub Releases
+        uses: actions/upload-artifact@v2
+        with:
+          name: yarn.mrpack
+          path: yarn-*.mrpack
+          if-no-files-found: error
+
+      - name: Upload CurseForge to GitHub Releases
+        uses: actions/upload-artifact@v2
+        with:
+          name: yarn.zip
+          path: yarn-*.zip
+          if-no-files-found: error
