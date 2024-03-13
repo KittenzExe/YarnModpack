@@ -21,27 +21,27 @@ jobs:
         run: go install github.com/packwiz/packwiz@latest
 
       - name: Build for Modrinth
-        run: packwiz modrinth export --output $modpackFilePrefix_Modrinth_$commit.mrpack
+        run: packwiz modrinth export --output ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
 
       - name: Build for CurseForge
-        run: packwiz curseforge export --output $modpackFilePrefix_Curseforge_$commit.zip
+        run: packwiz curseforge export --output ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
 
       - name: Upload Modrinth to GitHub Releases
         uses: actions/upload-artifact@v2
         with:
-          name: $modpackFilePrefix_Modrinth_$commit.mrpack
-          path: $modpackFilePrefix_Modrinth_$commit.mrpack
+          name: ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
+          path: ${{env.modpackFilePrefix}}_Modrinth_${{env.commit}}.mrpack
           if-no-files-found: error
 
       - name: Upload CurseForge to GitHub Releases
         uses: actions/upload-artifact@v2
         with:
-          name: $modpackFilePrefix_Curseforge_$commit.zip
-          path: $modpackFilePrefix_Curseforge_$commit.zip
+          name: ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
+          path: ${{env.modpackFilePrefix}}_Curseforge_${{env.commit}}.zip
           if-no-files-found: error
       - name: Upload Prism To Github Releases
         uses: actions/upload-artifact@v2
         with:
-            name: $modpackFilePrefix_PrismLauncher.zip
-            path: $modpackFilePrefix_PrismLauncher.zip
+            name: ${{env.modpackFilePrefix}}_PrismLauncher.zip
+            path: ${{env.modpackFilePrefix}}_PrismLauncher.zip
             if-no-files-found: error
