@@ -932,22 +932,6 @@ hash = "5b5fdfaf8e757e4f54e621aca1c52f5d8c90c7be3bc78c2978173326f5c02bf5"
 metafile = true
 
 [[files]]
-file = "prism_instance/.minecraft/packwiz-installer-bootstrap.jar"
-hash = "a8fbb24dc604278e97f4688e82d3d91a318b98efc08d5dbfcbcbcab6443d116c"
-
-[[files]]
-file = "prism_instance/.packignore"
-hash = "d4afb4bd9e008bc55b86beda53dfe7c1f83cf70890792ca312ee6b0978568fb4"
-
-[[files]]
-file = "prism_instance/instance.cfg"
-hash = "00d19bbae2ef9e198e9d300c3f364b0dfd7e5d2d9e75781c5f5276b72c2961e0"
-
-[[files]]
-file = "prism_instance/mmc-pack.json"
-hash = "4e396263fbbbaa0b0e6d60e3aabf9a19b684375f65227c70ba2e56a4cb40085f"
-
-[[files]]
 file = "resourcepacks/Bluey-OPTI_ETF_EMF.zip"
 hash = "530a294df38c092604e8a2df8f7e7dd57890690ebf2ae84d86a08f920da44fe5"
 
