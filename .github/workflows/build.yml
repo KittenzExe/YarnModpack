@@ -29,8 +29,38 @@ jobs:
                         - name: Download the packwiz bootstrap for Prism Self Updating Instance
                           run: curl ${{env.packwizInstallerBootstrapDownloadUrl}} -o ${{env.prismInstanceFolderName}}/.minecraft/packwiz-installer-bootstrap.jar
 
-                        - name: Update Prism Self Updating Instance Config (instance.cfg)
-                          run: cat ${{env.prismInstanceFolderName}}/instance.cfg | sed -e 's|FILLIN_MODPACK_NAME|${{env.prismInstanceName}}|' | sed -e 's|FILLIN_MODPACK_EXPORT_NAME|${{env.prismInstanceName}}|' | sed -e 's|FILLIN_MODPACK_AUTHORS|${{env.prismInstanceAuthors}}|' | sed -e 's|FILLIN_MODPACK_PACKWIZ_URL|${{env.PACKWIZ_URL}}|' > ${{env.prismInstanceFolderName}}/instance.cfg
+                        - name: Update Prism Self Updating Instance Config [MODPACK_NAME] (instance.cfg)
+                          uses: jacobtomlinson/gha-find-replace@v2
+                          with:
+                                find: "FILLIN_MODPACK_NAME"
+                                replace: ${{env.prismInstanceName}}
+                                regex: false
+                                include: '${{env.prismInstanceFolderName}}/instance.cfg'
+
+                        - name: Update Prism Self Updating Instance Config [MODPACK_EXPORT_NAME] (instance.cfg)
+                          uses: jacobtomlinson/gha-find-replace@v2
+                          with:
+                                      find: "FILLIN_MODPACK_EXPORT_NAME"
+                                      replace: ${{env.prismInstanceName}}
+                                      regex: false
+                                      include: '${{env.prismInstanceFolderName}}/instance.cfg'
+
+                        - name: Update Prism Self Updating Instance Config [MODPACK_AUTHORS] (instance.cfg)
+                          uses: jacobtomlinson/gha-find-replace@v2
+                          with:
+                                      find: "FILLIN_MODPACK_AUTHORS"
+                                      replace: ${{env.prismInstanceAuthors}}
+                                      regex: false
+                                      include: '${{env.prismInstanceFolderName}}/instance.cfg'
+
+                        - name: Update Prism Self Updating Instance Config [MODPACK_PACKWIZ_URL] (instance.cfg)
+                          uses: jacobtomlinson/gha-find-replace@v2
+                          with:
+                                      find: "FILLIN_MODPACK_PACKWIZ_URL"
+                                      replace: ${{env.PACKWIZ_URL}}
+                                      regex: false
+                                      include: '${{env.prismInstanceFolderName}}/instance.cfg'
+                                      
                         - name: Install zip to zip Prism Self Updating Instance
                           uses: montudor/action-zip@v1
 
