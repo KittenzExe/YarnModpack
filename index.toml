@@ -154,7 +154,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "bfa6f98bbf994fc1e3a7d2dc9ccbda3f4089b8a57a82baf0f6d928fa369caadc"
+hash = "5333619ce0f7e191d409fac6cd1c5981b15fd9baee160114e4a5010d9b44761d"
 metafile = true
 
 [[files]]
@@ -184,7 +184,7 @@ metafile = true
 
 [[files]]
 file = "mods/copycats.pw.toml"
-hash = "a6a95c94b13bf9ab819ef5a9592dd41e0faef5cddbcaa08a0333c1261b7073fb"
+hash = "46adefd7fdff6a79a57d79a47073d55a28961be55408cebe7dbe16b2cadb9111"
 metafile = true
 
 [[files]]
@@ -399,7 +399,7 @@ metafile = true
 
 [[files]]
 file = "mods/forge-cit.pw.toml"
-hash = "f0f999293f442227eab70ab867bf14f1ed5c7f2ffda3d2e984a1e8e4e07daa24"
+hash = "aa80f559061dc262eeb6c0652bbc2edeb8372d5e17969e45e8e6e8bd9799ec12"
 metafile = true
 
 [[files]]
@@ -419,7 +419,7 @@ metafile = true
 
 [[files]]
 file = "mods/iceberg.pw.toml"
-hash = "d0d383d4ff24fd6a4c5a9319806b0c99da9d0120fa14719911596eb39abc6f20"
+hash = "c2d0731f0a5f41ee581adcf4a4898b142dc8fb5806883225f82554388b3db37f"
 metafile = true
 
 [[files]]
@@ -444,7 +444,7 @@ metafile = true
 
 [[files]]
 file = "mods/item-highlighter.pw.toml"
-hash = "25a898a7d5ea660c4104734fb18c33de91d465f0acf518a0f5df18b20f8385de"
+hash = "77ede7a29d0bc2c7dbccca89c48bfe2c42d595fa495bce22f31fbbf2a4e9086c"
 metafile = true
 
 [[files]]
@@ -619,7 +619,7 @@ metafile = true
 
 [[files]]
 file = "mods/mystical-agriculture.pw.toml"
-hash = "36d42c7b64e8ebf304294b73eecd9717beca9437bf7af8b3b985df63ccd8a315"
+hash = "72e81f1905a3a6f7fb8beeb0e0e7010c8ab55dd6733a07d6e2e26d6f920d1852"
 metafile = true
 
 [[files]]
