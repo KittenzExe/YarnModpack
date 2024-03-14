@@ -101,13 +101,6 @@ jobs:
                                   path: ${{env.REPO_NAME}}_Curseforge_${{env.COMMIT_ID}}.zip
                                   if-no-files-found: error
 
-                        - name: Upload Prism To Github Releases
-                          uses: actions/upload-artifact@v4
-                          with:
-                                  name: ${{env.modpackFilePrefix}}_PrismLauncher.zip
-                                  path: ${{env.modpackFilePrefix}}_PrismLauncher.zip
-                                  if-no-files-found: error
-
                         - name: Release to Github Releases
                           uses: softprops/action-gh-release@v2
                           with:
@@ -126,6 +119,6 @@ jobs:
                                   draft: false
                                   make_latest: true
                                   files: |
-                                          ${{env.modpackFilePrefix}}_PrismLauncher.zip
+                                          ${{env.REPO_NAME}}_PrismLauncher_${{env.COMMIT_ID}}.zip
                                           ${{env.REPO_NAME}}_Modrinth_${{env.COMMIT_ID}}.mrpack 
                                           ${{env.REPO_NAME}}_Curseforge_${{env.COMMIT_ID}}.zip
