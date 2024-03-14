@@ -399,7 +399,7 @@ metafile = true
 
 [[files]]
 file = "mods/forge-cit.pw.toml"
-hash = "f0f999293f442227eab70ab867bf14f1ed5c7f2ffda3d2e984a1e8e4e07daa24"
+hash = "aa80f559061dc262eeb6c0652bbc2edeb8372d5e17969e45e8e6e8bd9799ec12"
 metafile = true
 
 [[files]]
