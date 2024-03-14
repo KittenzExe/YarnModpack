@@ -40,7 +40,7 @@ jobs:
                         - name: Zip Prism Self Updating Instance
                           uses: montudor/action-zip@v1
                           with:
-                                  args: zip -qq -r ${{env.REPO_NAME}}_PrismLauncher_${{env.COMMIT_ID}}.zip ${{env.prismInstanceFolderName}}
+                                  args: zip -qq -r ${{env.REPO_NAME}}_PrismLauncher_${{env.COMMIT_ID}}.zip ${{env.prismInstanceFolderName}}/*.*
 
                         - name: Upload Prism Instance To Github Releases
                           uses: actions/upload-artifact@v4
