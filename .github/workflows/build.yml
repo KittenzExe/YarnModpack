@@ -11,6 +11,7 @@ env:
         prismInstanceName: Yarn Modpack Prism
         prismInstanceAuthors: KittenzExe \(Modpack\) \& Lilysoftpaw \(Packwiz \& Github Actions\)
         packwizInstallerBootstrapDownloadUrl: https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar
+        
 jobs:
         build:
                 runs-on: ubuntu-latest
@@ -27,7 +28,7 @@ jobs:
                           run: echo "PACKWIZ_URL=https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/pack.toml" >> $GITHUB_ENV
 
                         - name: Download the packwiz bootstrap for Prism Self Updating Instance
-                          run: curl ${{env.packwizInstallerBootstrapDownloadUrl}} -o ${{env.prismInstanceFolderName}}/.minecraft/packwiz-installer-bootstrap.jar
+                          run: curl -L -o ${{env.prismInstanceFolderName}}/.minecraft/packwiz-installer-bootstrap.jar ${{env.packwizInstallerBootstrapDownloadUrl}} 
 
                         - name: Update Prism Self Updating Instance Config [MODPACK_NAME] (instance.cfg)
                           uses: jacobtomlinson/gha-find-replace@v2
