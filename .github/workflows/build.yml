@@ -53,14 +53,14 @@ jobs:
                                       regex: false
                                       include: '${{env.prismInstanceFolderName}}/instance.cfg'
 
-                        - name: Update Prism Self Updating Instance Config [MODPACK_PACKWIZ_URL] (instance.cfg)
+                        - name: Update Prism Self Updating Instance Config [PACKWIZ_URL] (instance.cfg)
                           uses: jacobtomlinson/gha-find-replace@v2
                           with:
-                                      find: "FILLIN_MODPACK_PACKWIZ_URL"
+                                      find: "FILLIN_PACKWIZ_URL"
                                       replace: ${{env.PACKWIZ_URL}}
                                       regex: false
                                       include: '${{env.prismInstanceFolderName}}/instance.cfg'
-                                      
+
                         - name: Install zip to zip Prism Self Updating Instance
                           uses: montudor/action-zip@v1
 
