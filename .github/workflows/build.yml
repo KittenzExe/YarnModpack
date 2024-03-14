@@ -30,12 +30,7 @@ jobs:
                           run: curl ${{env.packwizInstallerBootstrapDownloadUrl}} -o ${{env.prismInstanceFolderName}}/.minecraft/packwiz-installer-bootstrap.jar
 
                         - name: Update Prism Self Updating Instance Config (instance.cfg)
-                          run: |
-                                  cat ${{env.prismInstanceFolderName}}/instance.cfg | 
-                                  sed -e 's|FILLIN_MODPACK_NAME|${{env.prismInstanceName}}|' | 
-                                  sed -e 's|FILLIN_MODPACK_EXPORT_NAME|${{env.prismInstanceName}}|' | 
-                                  sed -e 's|FILLIN_MODPACK_AUTHORS|${{env.prismInstanceAuthors}}|' | 
-                                  sed -e 's|FILLIN_MODPACK_PACKWIZ_URL|${{env.PACKWIZ_URL}}|' > ${{env.prismInstanceFolderName}}/instance.cfg
+                          run: cat ${{env.prismInstanceFolderName}}/instance.cfg | sed -e 's|FILLIN_MODPACK_NAME|${{env.prismInstanceName}}|' | sed -e 's|FILLIN_MODPACK_EXPORT_NAME|${{env.prismInstanceName}}|' | sed -e 's|FILLIN_MODPACK_AUTHORS|${{env.prismInstanceAuthors}}|' | sed -e 's|FILLIN_MODPACK_PACKWIZ_URL|${{env.PACKWIZ_URL}}|' > ${{env.prismInstanceFolderName}}/instance.cfg
                         - name: Install zip to zip Prism Self Updating Instance
                           uses: montudor/action-zip@v1
 
