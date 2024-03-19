@@ -1,11 +1,11 @@
 name = "Yarn.Modpack.Prism"
-version = "1.0.0"
+version = "1.0.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "1c596ca89602a6ccfb4c3e080ddf57ac573ac612506ad16b369f014688f4523c"
+hash = "8fff141244bb866204ce281e7c69e638b2a9bb31f85c77da641973feb9ff975f"
 
 [versions]
 minecraft = "1.20.1"
