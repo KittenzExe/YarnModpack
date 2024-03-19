@@ -19,6 +19,7 @@
                 "cwd":"${workspaceFolder}"
         },{
                 "preLaunchTask": "Packwiz-UpdatePack",
+                "postDebugTask": "Git-CommitPackwizUpdate",
                 "type": "node-terminal",
                 "request": "launch",
                 "name": "Packwiz - Update Pack",
