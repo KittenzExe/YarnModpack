@@ -30,7 +30,7 @@
                         "label": "Git-CommitPackwizUpdate",
                         "dependsOn": ["Git-CommitPackwizUpdate-AddMods","Git-CommitPackwizUpdate-AddIndexToml","Git-CommitPackwizUpdate-AddPackToml"],
                         "type": "shell",
-                        "command": "git commit -m \"fix: Update Packwiz Pack [VSCode Run]\""
+                        "command": "git commit --message=\\\"fix: Update Packwiz Pack [VSCode Run]\\\""
                 }
         ]
 }
