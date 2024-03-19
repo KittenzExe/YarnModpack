@@ -17,6 +17,13 @@
                 "name": "Packwiz - Build Curseforge Pack Locally",
                 "command": "packwiz curseforge export --output LOCALBUILD_Curseforge_LOCAL.zip",
                 "cwd":"${workspaceFolder}"
+        },{
+                "preLaunchTask": "Packwiz-UpdatePack",
+                "type": "node-terminal",
+                "request": "launch",
+                "name": "Packwiz - Update Pack",
+                "command": "echo Updated",
+                "cwd":"${workspaceFolder}"
         }
 ]
 }
