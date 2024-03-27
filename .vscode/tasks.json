@@ -12,6 +12,25 @@
                         "dependsOn": ["Packwiz-RefreshIndex"],
                         "type": "shell",
                         "command": "packwiz update --all --yes"
+                },
+                {
+                        "label": "Git-CommitPackwizUpdate-AddMods",
+                        "type": "shell",
+                        "command": "git add mods/*.*"
+                },{
+                        "label": "Git-CommitPackwizUpdate-AddIndexToml",
+                        "type": "shell",
+                        "command": "git add index.toml"
+                },{
+                        "label": "Git-CommitPackwizUpdate-AddPackToml",
+                        "type": "shell",
+                        "command": "git add pack.toml"
+                },
+                {
+                        "label": "Git-CommitPackwizUpdate",
+                        "dependsOn": ["Git-CommitPackwizUpdate-AddMods","Git-CommitPackwizUpdate-AddIndexToml","Git-CommitPackwizUpdate-AddPackToml"],
+                        "type": "shell",
+                        "command": "git commit --message=\\\"fix: Update Packwiz Pack [VSCode Run]\\\""
                 }
         ]
 }

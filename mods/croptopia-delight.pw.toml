@@ -1,6 +1,6 @@
 name = "Croptopia Delight"
 filename = "CroptopiaDelight-1.20.1_1.2.2-forge.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/z2Ihxkgp/versions/ERCDfnVj/CroptopiaDelight-1.20.1_1.2.2-forge.jar"

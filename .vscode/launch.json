@@ -4,17 +4,26 @@
         // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
         "version": "0.2.0",
         "configurations": [{
+                "preLaunchTask": "Packwiz-UpdatePack",
                 "type": "node-terminal",
                 "request": "launch",
                 "name": "Packwiz - Build Modrinth Pack Locally",
-                "command": "packwiz curseforge export --output LOCALBUILD_Curseforge_LOCAL.zip",
+                "command": "packwiz modrinth export --output LOCALBUILD_Modrinth_LOCAL.zip",
                 "cwd":"${workspaceFolder}"
         },{
-                "preLaunchTask": "updatePackwiz",
+                "preLaunchTask": "Packwiz-UpdatePack",
                 "type": "node-terminal",
                 "request": "launch",
                 "name": "Packwiz - Build Curseforge Pack Locally",
                 "command": "packwiz curseforge export --output LOCALBUILD_Curseforge_LOCAL.zip",
+                "cwd":"${workspaceFolder}"
+        },{
+                "preLaunchTask": "Packwiz-UpdatePack",
+                "postDebugTask": "Git-CommitPackwizUpdate",
+                "type": "node-terminal",
+                "request": "launch",
+                "name": "Packwiz - Update Pack",
+                "command": "echo Updated",
                 "cwd":"${workspaceFolder}"
         }
 ]
