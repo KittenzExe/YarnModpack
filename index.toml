@@ -20,7 +20,7 @@ metafile = true
 
 [[files]]
 file = "mods/aether.pw.toml"
-hash = "5b1989d9b5a39cb105db167df7ba4966cadd32b73316a5e935a7ba8685f06618"
+hash = "342c4150cf2a14b09785131d8c44fb99c4c63e7c1e8e4cd0198f8ae923262515"
 metafile = true
 
 [[files]]
@@ -30,7 +30,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "5b3b15d695310491a8b6678b9b30f4d2fca0a36528b053b4c3e8d157b7599e56"
+hash = "eb862320d6a4e793b69ea05b292193bbd90910b3f415f6697438710f48a4246c"
 metafile = true
 
 [[files]]
@@ -124,7 +124,7 @@ metafile = true
 
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
-hash = "feb55bf6d856555a845465691394e598d0977a175c539a659049963bba5e9131"
+hash = "3ead5765f5991ad425623be287b1c10207ab22f1f5ca674180379c708c744009"
 metafile = true
 
 [[files]]
@@ -279,7 +279,7 @@ metafile = true
 
 [[files]]
 file = "mods/do-a-barrel-roll.pw.toml"
-hash = "96223110edb3514e4f13e43559003da0f5b4baccf28eecbc1022bbd0c3c54909"
+hash = "1244df8a5190d17f5d9cf1bf7ae5d1808f4509412935a3e3e86c9c0c35509374"
 metafile = true
 
 [[files]]
@@ -314,12 +314,12 @@ metafile = true
 
 [[files]]
 file = "mods/elytra-trims.pw.toml"
-hash = "3b4e491a1c4bc766f216714ad8b2497d6a5caa8568a9ee4e6ed3971e5b1477d3"
+hash = "919bbe7515a9294409567e44eaaeabbfeab64f9e977e785b75e2a34bfda8cd3e"
 metafile = true
 
 [[files]]
 file = "mods/embeddium.pw.toml"
-hash = "1a6d0711f27c72fd535fef344cfda555859fdfc59951c2bd25730308dbb4c8e5"
+hash = "f62ca8e2ff4c78e9052177b200820dcdefaa1d4970f27a995b332357cff2832c"
 metafile = true
 
 [[files]]
@@ -329,7 +329,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "5df33e02e73dc0be0394ebdc38c92b35011efa89f47ccb74545fbf0c3f33badb"
+hash = "5fe2b73d33efd03a5b487b10d98415318a89faf63d74965e0402b82b464c0f24"
 metafile = true
 
 [[files]]
@@ -589,17 +589,17 @@ metafile = true
 
 [[files]]
 file = "mods/modelfix.pw.toml"
-hash = "d175da6da5751c95238cf193ddf83d2d9aba806680a7abe1ef368c84b1da7960"
+hash = "23007c9b06315a062ca923911d9fd89066946f6f52df31c06548fa8bc241b55c"
 metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "712ac79bb4012b906355269fa28ac92c1cae6bf37b43a4dcd1320f98a323b4b2"
+hash = "91819e8cff5122b48bb26ee674a701264c9de18b73bcfb04f274662722f65e40"
 metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "e71354f6eb664a8bc3f904bcc24b0043421cdd88c60bebc3a9547db40ad2357f"
+hash = "004683b6990a62ac42bf370214da457d8ecbab6f35573ae6d3283606df785ef6"
 metafile = true
 
 [[files]]
@@ -669,7 +669,7 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "af94e8930aa37a5be7510b721d3cde32e40ef60964cd10bf701491a43ba4744a"
+hash = "cf286645d97aa16bc6949cf9515eaee267a8115f5a16c0dfda361ed893164d73"
 metafile = true
 
 [[files]]
@@ -679,7 +679,7 @@ metafile = true
 
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
-hash = "832099d03bf684865051b5f21f63a67176010f90d180e429f1966dce483b20a1"
+hash = "026e484ff48513b66e8d78169bfbe5644fb76974ec1a7d5db1dfcc4590c9ef45"
 metafile = true
 
 [[files]]
@@ -758,7 +758,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "f728850654a389c05e2c907124322d40067a666208da3892e261da079442332b"
+hash = "0d459b4bc289e78f21cae2be883b9a442d61c34a17f87db90b0804d00456308b"
 metafile = true
 
 [[files]]
@@ -778,7 +778,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "a68dba1c0402252605702f4665da9b8c9604d838576de708d65d2cd2869b263a"
+hash = "7b6c59b1a6411b599cc95793bc7a9ef2fda525ef30d185afe08c6fee99031920"
 metafile = true
 
 [[files]]
@@ -793,7 +793,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "a223144b40f462c2675ecdd193509a27f754b6fd2d1c5c4c4baf2204f1d99924"
+hash = "f01c641a8380cef661f07a156a9cfa7f008dbd5cc393be2803a7cb5f0a956902"
 metafile = true
 
 [[files]]
@@ -858,7 +858,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "f13093eef60df003a86c3a2873589e30c3d449a04c2e6ff84d2f43e6c70b3ec9"
+hash = "c264fb495d314b658cf6c43429c1737a4d1c8542cfb14234455f9b7214e2b55a"
 metafile = true
 
 [[files]]
