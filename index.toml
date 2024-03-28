@@ -124,7 +124,7 @@ metafile = true
 
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
-hash = "86e3f51a069f95dacc3634353edac41b1084cf1586212f5e62c4bfcfb90f98f5"
+hash = "3ead5765f5991ad425623be287b1c10207ab22f1f5ca674180379c708c744009"
 metafile = true
 
 [[files]]
@@ -793,7 +793,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "c4cf287954c34dd8c3b5a77d9efd2ba7a12f1907c44333242c913e17a88ba8c8"
+hash = "f01c641a8380cef661f07a156a9cfa7f008dbd5cc393be2803a7cb5f0a956902"
 metafile = true
 
 [[files]]
